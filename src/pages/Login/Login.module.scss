@@ -1,0 +1,72 @@
+@import "src/colors";
+
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login {
+    width: 380px;
+    height: 350px;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 6px 58px rgb(94 94 94 / 15%);
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    transition: 0.5s;
+    padding: 30px;
+
+    .error {
+      margin-top: 3px;
+      color: red;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      height: 39px;
+      border-bottom: 1px solid $grey;
+
+      &:hover {
+        border-bottom: 1px solid #40A9FF;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:nth-child(1) {
+        border: none;
+
+      }
+    }
+    .errorMsg{
+      margin-top: 20px;
+      color: red;
+    }
+  }
+}
+
+
+:global(.ant-input-password) {
+  width: 100%;
+  outline: none;
+}
+
+:global(.ant-input-password):focus {
+  width: 100%;
+  outline: none;
+}

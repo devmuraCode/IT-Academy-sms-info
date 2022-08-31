@@ -1,0 +1,132 @@
+@import "colors";
+
+
+* {
+  font-family: MullerMedium, sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  src: local("MullerRegular"), local("MullerRegular"),
+  url("./assets/fonts/MullerRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  src: local("MullerExtraBold"), local("MullerExtraBold"),
+  url("./assets/fonts/MullerExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+@font-face {
+  font-family: "MullerBold";
+  src: local("MullerBold"), local("MullerExtraBold"),
+  url("./assets/fonts/MullerBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MullerHeavy";
+  src: local("MullerHeavy"), local("MullerHeavy"),
+  url("./assets/fonts/MullerHeavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  src: local("MullerMedium"), local("MullerMedium"),
+  url("./assets/fonts/MullerMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: $bg-dashboard;
+}
+
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: $black;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-family: MullerMedium, sans-serif;
+}
+
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px 15px 15px;
+}
+
+.error {
+  color: red;
+}
+
+.btnSubmit {
+  margin: 20px 10px 20px 0;
+  border: 1px solid $black;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-select {
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  max-width: 800px;
+}
+
+.ant-input-password, .ant-input-password {
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  height: 40px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  width: 412px;
+}
+
+.ant-modal-body {
+  form {
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ant-modal-header,
+.ant-modal-content {
+  border-radius: 15px;
+}
+
+
+@media all and (max-width: 570px ) {
+  .ant-modal-content{
+    width: 400px;
+  }
+}

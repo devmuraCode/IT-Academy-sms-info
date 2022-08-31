@@ -1,0 +1,54 @@
+@import "src/colors";
+
+
+.card {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background: $white;
+  border-radius: 10px;
+  box-shadow: 0 6px 58px rgb(94 94 94 / 15%);
+  cursor: pointer;
+  border: 1px solid $white;
+  color: #bebebe;
+  margin-right: 30px;
+  transition: 0.5s;
+  z-index: 1;
+
+  .setting {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: alias;
+
+    img {
+      cursor: help ;
+      position: absolute;
+      right: 0;
+      width: 25px;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
+    transition: 0.5s;
+    border: 1px solid $green;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .card{
+    margin-right: 0;
+  }
+}

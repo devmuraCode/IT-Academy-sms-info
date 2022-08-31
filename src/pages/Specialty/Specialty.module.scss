@@ -1,0 +1,25 @@
+@import "./src/colors";
+
+.specialty {
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+  box-shadow: 0 6px 30px rgba(132, 136, 142, 0.2);
+
+  input {
+    border: none;
+    height: 39px;
+    border-bottom: 1px solid $grey;
+  }
+  .speciality{
+   display: flex;
+    margin-bottom: 12px;
+   p{
+     width: 200px;
+     margin: 0;
+   }
+    .specialty_img{
+      width: 20px;
+    }
+  }
+}

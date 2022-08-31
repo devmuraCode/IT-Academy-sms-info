@@ -1,0 +1,124 @@
+@import "src/colors";
+
+.header {
+  margin: 20px 0;
+  //background: $white;
+}
+
+.menu, .menu_mobile {
+  display: flex;
+
+  //justify-content: space-between;
+
+  p, .name {
+    //padding: 10px 20px;
+    font-family: MullerMedium, sans-serif;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 6px 58px rgb(94 94 94 / 15%);
+    cursor: pointer;
+    color: #bebebe;
+    height: 44px;
+    line-height: 44px;
+    justify-content: center;
+    text-align: center;
+    transition: .8s;
+    width: 172px;
+
+    img {
+      width: 20px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .name {
+    color: $black;
+  }
+
+  .active {
+    p {
+      color: $green;
+    }
+  }
+}
+
+.menu_mobile {
+  flex-direction: column;
+  margin-left: 25px;
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.menu_icon {
+  margin-left: 20px;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.menu_icon span {
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu_icon span:first-child {
+  top: 0;
+}
+
+.menu_icon span:nth-child(2) {
+  top: 6px;
+}
+
+.menu_icon span:last-child {
+  top: 12px;
+}
+
+.menu_icon:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu_icon:hover span:first-child,
+.menu_icon:hover span:last-child {
+  top: 6px;
+  background-color: red;
+}
+
+.menu_icon:hover span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu_icon:hover span:last-child {
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .menu_icon {
+    display: flex;
+  }
+  .header {
+    .menu {
+      display: none;
+    }
+  }
+
+}
+
+
+
